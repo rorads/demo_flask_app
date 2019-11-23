@@ -8,10 +8,10 @@ In the initial release, I've just created a small task keeping web app, having f
 
 ### Prerequisites
 
-* Docker
+* [Docker](https://www.docker.com/products/docker-desktop)
 * Visual Studio Code
-  * Docker Extension
-  * Remote Development Extension
+  * [Docker Extension](https://code.visualstudio.com/docs/azure/docker)
+  * [Remote Development Extension](https://code.visualstudio.com/docs/remote/remote-overview)
 
 > Note that the Dockerfile in this repository is set to use `ubuntu:bionic` as the OS, which means that python3.6 is used, which is mirrored in the setup below.
 
@@ -26,7 +26,9 @@ git clone https://github.com/rorads/demo_flask_app.git
 
 In VS Code, open the cloned repository in the editor, then open the command palate and choose `Remote-Containers: Open Repository in Container...`. This will build an image, and then launch and attach to a container based off of the specifications outlined in the [.devcontainer](.devcontainer/) folder.
 
-#### Install Requirements (docker, so no need for virtualenv)
+#### Install Requirements
+
+> This can be done with or without virtualenv, but the requirements are set for with.
 
 ```sh
 virtualenv -p python3.6 .env
