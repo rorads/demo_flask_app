@@ -6,10 +6,6 @@ In the initial release, I've just created a small task keeping web app, having f
 
 ![test_creenshot_2019-11-23.png](static/screenshots/test_creenshot_2019-11-23.png)
 
-Currently this app can be developed and tested in a docker container in VS Code by doing the following within a folder of your choice:
-
-{{ TODO: add instructions once pushed to Github }}
-
 ### Prerequisites
 
 * Docker
@@ -21,9 +17,11 @@ Currently this app can be developed and tested in a docker container in VS Code 
 
 ### Initial Setup
 
+Currently this app can be developed and tested in a docker container in VS Code by doing the following within a folder of your choice:
+
 ```sh
 cd <wherever_you_on_your_local_machine>
-git clone <this_repo_.git>
+git clone https://github.com/rorads/demo_flask_app.git
 ```
 
 In VS Code, open the cloned repository in the editor, then open the command palate and choose `Remote-Containers: Open Repository in Container...`. This will build an image, and then launch and attach to a container based off of the specifications outlined in the [.devcontainer](.devcontainer/) folder.
